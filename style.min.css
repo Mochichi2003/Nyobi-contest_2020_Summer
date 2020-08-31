@@ -1,0 +1,138 @@
+@charset "UTF-8";
+body {
+  color: #fff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #233142;
+  color: #FEFEFE;
+}
+
+.music_stop {
+  background: #f95959;
+}
+
+.music_start {
+  background: #39f;
+}
+
+.music_stop, .music_start {
+  margin-top: 8px;
+  border: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  color: white;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border-radius: 3px 0px 0px 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  border-radius: 3px;
+}
+
+.music_stop_open, .music_start_open {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.music_stop:hover, .music_start:hover {
+  opacity: 0.7;
+}
+
+input {
+  color: red;
+}
+
+.form * {
+  z-index: 10;
+}
+
+.form__file {
+  border: #bdbdbd44  solid 1px;
+  border-radius: 6px;
+}
+
+.form__file input[type="file"] {
+  display: none;
+}
+
+.form__file label {
+  background: #39f;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border-radius: 3px 0px 0px 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.form__file label:hover {
+  opacity: 0.7;
+}
+
+.form__file label:after {
+  content: "音声または動画ファイルが選択されていません";
+  color: #FEFEFE;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: -300px;
+  top: calc(50% - 10px);
+}
+
+.form__file label.changed:after {
+  content: "";
+}
+
+.form__file .filename {
+  font-size: 12px;
+}
+
+iframe {
+  width: 100vw;
+}
+
+.main {
+  padding: 40px;
+}
+
+.main * {
+  z-index: 10;
+}
+
+.main h1, .main p {
+  cursor: text;
+}
+
+.main input {
+  width: 100%;
+  background: #f95959;
+  z-index: 10;
+  position: relative;
+}
+
+#visualizer {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+  position: fixed;
+  bottom: 0px;
+  /* TODO */
+  z-index: 1;
+}
+/*# sourceMappingURL=style.min.css.map */

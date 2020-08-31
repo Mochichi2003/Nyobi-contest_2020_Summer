@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>夏のN予備校コンテスト応募サイト</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dist/css/style.min.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!-- 上の選ぶところ -->
+  <div class="main">
+    <h1>オーディオビィジュアライザー</h1>
+    <p>
+      音声付きの動画ファイルまたは、動画動画ファイルを読み込むと始まります
+    </p>
+
+    <!-- 選択するところ -->
+    <form class="form" action="#">
+      <div class="form__file">
+        <input class="file" type="file" name="image" accept=".mp4,.mp3,.mov,.wav" id="image1" />
+        <label for="image1">音声またはまたは動画ファイルを選択</label>
+      </div>
+    </form>
+    <audio src=""></audio>
+    <!-- 再生してるときに再生/ボタンを配置するところ -->
+    <button Onclick="stop_music()" class="music_stop">停止</button>
+
+    <!-- <input id="file" type="file" accept=".mp4,.mp3,.mov,.wov" /> -->
+  </div>
+
+  <!-- キャンバスのところ -->
+
+  <canvas id="visualizer" height="600"></canvas>
+</body>
+
+</html>
