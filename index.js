@@ -35,7 +35,7 @@ window.onload = function () {
         if (stop_or_play) {
           // source.start();
         } else if (!stop_or_play) {
-          source.pause();
+          source.stop();
         }
       }, 100);
 
